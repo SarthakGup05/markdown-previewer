@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--  -->
+        <h1>Markdown Previewer</h1>
+        <button id="toggle-theme">🌙 Dark Mode</button>
+        <button id="export-pdf">📄 Export as PDF</button>
+        <textarea id="markdown-input" placeholder="Write your Markdown here..."></textarea>
+        <div id="counter">Words: 0 | Characters: 0</div>
+        <div id="markdown-preview"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
